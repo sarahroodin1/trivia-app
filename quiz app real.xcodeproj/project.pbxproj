@@ -16,7 +16,6 @@
 		C1DFAC5C26FC1022009FA029 /* quiz_app_realTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DFAC5B26FC1022009FA029 /* quiz_app_realTests.swift */; };
 		C1DFAC6626FC1022009FA029 /* quiz_app_realUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DFAC6526FC1022009FA029 /* quiz_app_realUITests.swift */; };
 		C1DFAC6826FC1022009FA029 /* quiz_app_realUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DFAC6726FC1022009FA029 /* quiz_app_realUITestsLaunchTests.swift */; };
-		C1DFAC7726FC111B009FA029 /* Screen Shot 2021-09-22 at 9.33.52 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DFAC7626FC111B009FA029 /* Screen Shot 2021-09-22 at 9.33.52 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		C1DFAC6126FC1022009FA029 /* quiz app realUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quiz app realUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DFAC6526FC1022009FA029 /* quiz_app_realUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_app_realUITests.swift; sourceTree = "<group>"; };
 		C1DFAC6726FC1022009FA029 /* quiz_app_realUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_app_realUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C1DFAC7626FC111B009FA029 /* Screen Shot 2021-09-22 at 9.33.52 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2021-09-22 at 9.33.52 PM.png"; path = "../../../Desktop/Screen Shot 2021-09-22 at 9.33.52 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 				C1DFAC4626FC1020009FA029 /* SceneDelegate.swift */,
 				C1DFAC4826FC1020009FA029 /* ViewController.swift */,
 				C1DFAC4A26FC1020009FA029 /* Main.storyboard */,
-				C1DFAC7626FC111B009FA029 /* Screen Shot 2021-09-22 at 9.33.52 PM.png */,
 				C1DFAC4D26FC1022009FA029 /* Assets.xcassets */,
 				C1DFAC4F26FC1022009FA029 /* LaunchScreen.storyboard */,
 				C1DFAC5226FC1022009FA029 /* Info.plist */,
@@ -235,7 +232,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1DFAC5126FC1022009FA029 /* LaunchScreen.storyboard in Resources */,
-				C1DFAC7726FC111B009FA029 /* Screen Shot 2021-09-22 at 9.33.52 PM.png in Resources */,
 				C1DFAC4E26FC1022009FA029 /* Assets.xcassets in Resources */,
 				C1DFAC4C26FC1020009FA029 /* Main.storyboard in Resources */,
 			);

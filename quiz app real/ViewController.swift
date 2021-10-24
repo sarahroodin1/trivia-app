@@ -9,11 +9,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var playButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        playButton.layer.cornerRadius = 3
+        
+        fetchAPIData {(APIs) in
+            for API in APIs {
+                print(API.question!)
+            }
+        }
     }
-
+    
+    func fetchAPIData(completionHandler:@escaping([API]) -> Void){
+        let url = URL(string: "https://pastebin.com/raw/QRGzxxEy")!
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else {
+                return
+            }
+            do{
+                let APIData = try JSONDecoder().decode([API].self, from: data)
+                completionHandler(APIData)
+            }
+            catch{
+                let error = error
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
 }
 

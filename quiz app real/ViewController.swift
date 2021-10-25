@@ -18,7 +18,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+    //fetchAPIData function retrieves the data from the API so I can use it
     func fetchAPIData(completionHandler:@escaping([API]) -> Void){
         let url = URL(string: "https://pastebin.com/raw/QRGzxxEy")!
         
@@ -36,5 +36,6 @@ class ViewController: UIViewController {
             }
         }.resume()
     }
+    
 }
 

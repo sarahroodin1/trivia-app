@@ -9,8 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var FAQButton: UIButton!
+    @IBOutlet weak var topicsButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //makes all of the buttons on the home page have rounded corners
+        playButton.layer.cornerRadius = 6.0
+        topicsButton.layer.cornerRadius = 6.0
+        playButton.layer.cornerRadius = 6.0
+        
         
         fetchAPIData {(APIs) in
             for API in APIs {
@@ -22,7 +31,7 @@ class ViewController: UIViewController {
     func fetchAPIData(completionHandler:@escaping([API]) -> Void){
         let url = URL(string: "https://pastebin.com/raw/QRGzxxEy")!
         
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+        let task: Void = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else {
                 return
             }

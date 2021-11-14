@@ -8,30 +8,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var FAQButton: UIButton!
-    @IBOutlet weak var topicsButton: UIButton!
-    @IBOutlet weak var playButton: UIButton!
+    var arrayOfAPIS: [API]!
+    
+    @IBOutlet weak var question: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+    
+        /*class API {
+
+        var first = API(question: <#T##String?#>, A: <#T##String#>, B: <#T##String#>, C: <#T##String#>, D: <#T##String#>, answer: <#T##String#>)
+        }*/
         
-        //makes all of the buttons on the home page have rounded corners
-        playButton.layer.cornerRadius = 6.0
-        topicsButton.layer.cornerRadius = 6.0
-        playButton.layer.cornerRadius = 6.0
         
-        
+     
+        //fetchAPIData function retrieves the data from the API so I can use it
         fetchAPIData {(APIs) in
-            for API in APIs {
-                print(API.question!)
+            for a in APIs {
+                print(a.question!)
+                //get data into the array
+                self.arrayOfAPIS.append(API(question:a.question, A:a.A, B:a.B, C:a.C, D:a.D, answer:a.answer))
             }
         }
     }
-    //fetchAPIData function retrieves the data from the API so I can use it
     func fetchAPIData(completionHandler:@escaping([API]) -> Void){
         let url = URL(string: "https://pastebin.com/raw/QRGzxxEy")!
         
-        let task: Void = URLSession.shared.dataTask(with: url) { data, response, error in
+        let _: Void = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else {
                 return
             }

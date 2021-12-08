@@ -8,7 +8,7 @@
 
 import Foundation
 //file for the API and creates variables for each of the attributes in the API file
-struct API: Codable{
+struct Question: Codable{
     var question: String!
     var A: String
     var B: String

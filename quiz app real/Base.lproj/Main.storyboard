@@ -89,7 +89,7 @@
         <!--generalKnowledge-->
         <scene sceneID="zuk-Gz-dQI">
             <objects>
-                <viewController title="generalKnowledge" id="twq-R0-9Gz" customClass="ViewController" customModule="quiz_app_real" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="generalKnowledge" id="twq-R0-9Gz" customClass="generalKnowledgeViewController" customModule="quiz_app_real" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qog-Sb-YRv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-h2-lKy">
-                                <rect key="frame" x="133" y="190" width="150" height="60"/>
+                                <rect key="frame" x="133" y="193" width="150" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
@@ -158,13 +158,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="oQJ-db-gPS"/>
                     <connections>
-                        <outlet property="A" destination="0Ht-J1-oD3" id="Pgz-2w-lfo"/>
-                        <outlet property="question" destination="WaU-h2-lKy" id="WDK-oU-qLP"/>
+                        <outlet property="AButton" destination="0Ht-J1-oD3" id="Som-Ag-efI"/>
+                        <outlet property="BButton" destination="C7Q-vu-ywL" id="HwF-l4-1Kt"/>
+                        <outlet property="CButton" destination="SuS-hO-HMi" id="1Yo-pl-9Hh"/>
+                        <outlet property="DButton" destination="Ep1-eC-nue" id="9PW-3p-C9c"/>
+                        <outlet property="QuestionButton" destination="WaU-h2-lKy" id="96b-uP-Osn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwt-BT-JRj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1341" y="-653"/>
+            <point key="canvasLocation" x="1340.5797101449277" y="-653.57142857142856"/>
         </scene>
         <!--ifFAQPressed-->
         <scene sceneID="r1F-7H-5uf">

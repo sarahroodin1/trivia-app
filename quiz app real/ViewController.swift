@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     let questionData = Singleton.shared
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //fetchAPIData function retrieves the data from the API so I can use it
         
     }

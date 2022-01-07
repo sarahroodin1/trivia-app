@@ -34,7 +34,7 @@ class Singleton{
     func buildArray(){
         fetchAPIData { [self](APIs) in
             for a in APIs {
-               // print(a.question!)
+                print(a.answer)
                 //get data into the array
                 self.arrayOfAPIS.append(Question(question:a.question, A:a.A, B:a.B, C:a.C, D:a.D, answer:a.answer))
             }

@@ -14,6 +14,7 @@ class generalKnowledgeViewController: UIViewController {
     @IBOutlet weak var CButton: UIButton!
     @IBOutlet weak var BButton: UIButton!
     @IBOutlet weak var AButton: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
         
@@ -35,24 +36,27 @@ class generalKnowledgeViewController: UIViewController {
         DButton.setTitle(questionData1.arrayOfAPIS[randomInt].D, for: .normal)
     
         }
-       
+       //var scoreLabel = 0
         //creates a correct answer variable and changes the button color and text to be green and say 'correct'
        /* let correctAnswer = questionData1.arrayOfAPIS[randomInt].answer
         
         if(correctAnswer == questionData1.arrayOfAPIS[randomInt].A){
             AButton.setTitle("Correct", for: .normal)
+            scoreLabel++
         }
        else if(correctAnswer == questionData1.arrayOfAPIS[randomInt].B){
             BButton.setTitle("Correct", for: .normal)
+            scoreLabel++
 
         }
         else if(correctAnswer == questionData1.arrayOfAPIS[randomInt].C){
             CButton.setTitle("Correct", for: .normal)
-
+            scoreLabel++
 
         }
         else{
         DButton.setTitle("Correct", for: .normal)
+            scoreLabel++
 
         }
         */

@@ -126,14 +126,6 @@
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cv8-wD-44Y">
-                                <rect key="frame" x="132" y="728" width="92" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.70401452399999997" green="0.63157914029999995" blue="0.86087566609999999" alpha="0.60166879250000005" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yf-Za-zQr">
                                 <rect key="frame" x="62" y="59" width="291" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -152,8 +144,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cv8-wD-44Y">
+                                <rect key="frame" x="150" y="728" width="92" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70401452399999997" green="0.63157914029999995" blue="0.86087566609999999" alpha="0.60166879250000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRv-69-Bho">
-                                <rect key="frame" x="224" y="728" width="24" height="80"/>
+                                <rect key="frame" x="242" y="728" width="24" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.70401452399999997" green="0.63157914029999995" blue="0.86087566609999999" alpha="0.60166879250000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
@@ -171,6 +171,7 @@
                         <outlet property="CButton" destination="SuS-hO-HMi" id="1Yo-pl-9Hh"/>
                         <outlet property="DButton" destination="Ep1-eC-nue" id="9PW-3p-C9c"/>
                         <outlet property="QuestionButton" destination="WaU-h2-lKy" id="96b-uP-Osn"/>
+                        <outlet property="scoreLabel" destination="ZRv-69-Bho" id="hCY-3b-eoy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwt-BT-JRj" sceneMemberID="firstResponder"/>
@@ -358,7 +359,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xt5-Gd-a1m"/>
+        <segue reference="qb8-OU-YKr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">

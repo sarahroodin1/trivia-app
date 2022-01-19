@@ -10,9 +10,15 @@ class Singleton{
     var arrayOfAPIS: [Question] = []
     static let shared: Singleton = {
     let instance = Singleton()
-    instance.buildArray()
-    return instance
-    }()
+        instance.fetchAPIData{(questionList) in
+            for question in questionList{
+                        //get data into the array
+                        arrayOfAPIS.append(Question(question:a.question, A:a.A, B:a.B, C:a.C, D:a.D, answer:a.answer))
+                    }
+                }
+        return instance()
+    }
+        
     
     func fetchAPIData(completionHandler:@escaping([Question]) -> Void){
         let url = URL(string: "https://pastebin.com/raw/QRGzxxEy")!
@@ -23,6 +29,7 @@ class Singleton{
             }
             do{
                 let APIData = try JSONDecoder().decode([Question].self, from: data)
+                
                 completionHandler(APIData)
             }
             catch{
@@ -32,13 +39,7 @@ class Singleton{
         }.resume()
     }
     func buildArray(){
-        fetchAPIData { [self](APIs) in
-            for a in APIs {
-                print(a.answer)
-                //get data into the array
-                self.arrayOfAPIS.append(Question(question:a.question, A:a.A, B:a.B, C:a.C, D:a.D, answer:a.answer))
-            }
-        }
+        
    
     }
 }

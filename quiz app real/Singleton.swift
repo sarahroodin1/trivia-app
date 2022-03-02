@@ -7,39 +7,33 @@
 
 import Foundation
 class Singleton{
-    var arrayOfAPIS: [Question] = []
-    static let shared: Singleton = {
-    let instance = Singleton()
-        instance.fetchAPIData{(questionList) in
-            for question in questionList{
-                        //get data into the array
-                        arrayOfAPIS.append(Question(question:a.question, A:a.A, B:a.B, C:a.C, D:a.D, answer:a.answer))
-                    }
-                }
-        return instance()
-    }
-        
+    let questionData1 = Singleton()
+    var arrayOfQuestions: [Question] = []
     
-    func fetchAPIData(completionHandler:@escaping([Question]) -> Void){
+    static let shared: Singleton = {
+        let instance = Singleton()
+        fetchAPIData(QuestionData1)
+        return instance
+        
+        }()
+    
+    func fetchAPIData(completion:@escaping([Question]) -> Void){
         let url = URL(string: "https://pastebin.com/raw/QRGzxxEy")!
         
-        let _: Void = URLSession.shared.dataTask(with: url) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else {
                 return
             }
             do{
                 let APIData = try JSONDecoder().decode([Question].self, from: data)
                 
-                completionHandler(APIData)
+                completion(APIData)
             }
             catch{
                 let error = error
-                print(error.localizedDescription)
+                print(String(describing: error))
             }
-        }.resume()
-    }
-    func buildArray(){
-        
-   
+        }
+            task.resume()
     }
 }

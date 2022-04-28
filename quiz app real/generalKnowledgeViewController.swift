@@ -7,7 +7,7 @@
 
 import UIKit
 
-class generalKnowledgeViewController: UIViewController {
+class GeneralKnowledgeViewController: UIViewController {
     
     @IBOutlet weak var QuestionButton: UILabel!
     @IBOutlet weak var DButton: UIButton!

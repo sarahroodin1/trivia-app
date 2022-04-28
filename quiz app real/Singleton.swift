@@ -9,10 +9,12 @@ import Foundation
 import Alamofire
 
 class Singleton{
-    let questionData1 = Singleton()
+    
+    static let sharedInstance = Singleton()
     var arrayOfQuestions: [Question] = []
     
-    static var shared: Singleton = (){
+    
+    init() {
         print("hi")
         AF.request("https://pastebin.com/raw/QRGzxxEy").responseDecodable(of: Question.self) {response in
             switch response.result{
@@ -25,6 +27,7 @@ class Singleton{
             }
         
         }
+    }
     
    /* func fetchAPIData(completion:@escaping([Question]) -> Void){
         let url = URL(string: "https://pastebin.com/raw/QRGzxxEy")!

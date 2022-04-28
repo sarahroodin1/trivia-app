@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C14037F8275A714A00835A75 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14037F7275A714A00835A75 /* Singleton.swift */; };
-		C14037FA275A7B3400835A75 /* generalKnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14037F9275A7B3400835A75 /* generalKnowledgeViewController.swift */; };
+		C14037FA275A7B3400835A75 /* GeneralKnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14037F9275A7B3400835A75 /* GeneralKnowledgeViewController.swift */; };
 		C14315A32725FC8E004FD096 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14315A22725FC8E004FD096 /* Question.swift */; };
 		C1DFAC4526FC1020009FA029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DFAC4426FC1020009FA029 /* AppDelegate.swift */; };
 		C1DFAC4726FC1020009FA029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DFAC4626FC1020009FA029 /* SceneDelegate.swift */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		C14037F7275A714A00835A75 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		C14037F9275A7B3400835A75 /* generalKnowledgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generalKnowledgeViewController.swift; sourceTree = "<group>"; };
+		C14037F9275A7B3400835A75 /* GeneralKnowledgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralKnowledgeViewController.swift; sourceTree = "<group>"; };
 		C14315A22725FC8E004FD096 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C1DFAC4126FC1020009FA029 /* quiz app real.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quiz app real.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DFAC4426FC1020009FA029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				C1DFAC4626FC1020009FA029 /* SceneDelegate.swift */,
 				C1DFAC4826FC1020009FA029 /* ViewController.swift */,
 				C1DFAC4A26FC1020009FA029 /* Main.storyboard */,
-				C14037F9275A7B3400835A75 /* generalKnowledgeViewController.swift */,
+				C14037F9275A7B3400835A75 /* GeneralKnowledgeViewController.swift */,
 				C14037F7275A714A00835A75 /* Singleton.swift */,
 				C1DFAC4D26FC1022009FA029 /* Assets.xcassets */,
 				C1DFAC4F26FC1022009FA029 /* LaunchScreen.storyboard */,
@@ -279,7 +279,7 @@
 				C1DFAC4526FC1020009FA029 /* AppDelegate.swift in Sources */,
 				C14315A32725FC8E004FD096 /* Question.swift in Sources */,
 				C14037F8275A714A00835A75 /* Singleton.swift in Sources */,
-				C14037FA275A7B3400835A75 /* generalKnowledgeViewController.swift in Sources */,
+				C14037FA275A7B3400835A75 /* GeneralKnowledgeViewController.swift in Sources */,
 				C1DFAC4726FC1020009FA029 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

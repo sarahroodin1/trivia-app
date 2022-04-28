@@ -6,18 +6,27 @@
 //
 
 import Foundation
+import Alamofire
+
 class Singleton{
     let questionData1 = Singleton()
     var arrayOfQuestions: [Question] = []
     
-    static let shared: Singleton = {
-        let instance = Singleton()
-        fetchAPIData(QuestionData1)
-        return instance
+    static var shared: Singleton = (){
+        print("hi")
+        AF.request("https://pastebin.com/raw/QRGzxxEy").responseDecodable(of: Question.self) {response in
+            switch response.result{
+            case .success(let data):
+                print(data)
+            
+            case .failure(let error):
+                print(error)
+                
+            }
         
-        }()
+        }
     
-    func fetchAPIData(completion:@escaping([Question]) -> Void){
+   /* func fetchAPIData(completion:@escaping([Question]) -> Void){
         let url = URL(string: "https://pastebin.com/raw/QRGzxxEy")!
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
@@ -35,5 +44,5 @@ class Singleton{
             }
         }
             task.resume()
-    }
+    }*/
 }

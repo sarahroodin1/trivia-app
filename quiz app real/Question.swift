@@ -16,3 +16,8 @@ struct Question: Codable{
     var D: String
     var answer: String
 }
+
+struct QuestionData: Codable {
+    
+    var data: [Question]
+}

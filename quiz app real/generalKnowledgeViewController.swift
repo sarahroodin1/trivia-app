@@ -20,7 +20,6 @@ class GeneralKnowledgeViewController: UIViewController {
     override func viewDidLoad() {
         
     //makes a singleton object
-        let randomInt = 0
         super.viewDidLoad()
             DispatchQueue.main.async{
                 randomizer()
@@ -29,12 +28,13 @@ class GeneralKnowledgeViewController: UIViewController {
         
     //sets the question,a,b,c,&d buttons to the value of the api that is resulted from the randomint
         func randomizer(){
-        /*QuestionButton.text = questionData1.arrayOfQuestions[randomInt].question
+            let randomInt = 0
+        QuestionButton.text = questionData1.arrayOfQuestions[randomInt].question
        AButton.setTitle(questionData1.arrayOfQuestions[randomInt].A, for: .normal)
         BButton.setTitle(questionData1.arrayOfQuestions[randomInt].B, for: .normal)
         CButton.setTitle(questionData1.arrayOfQuestions[randomInt].C, for: .normal)
         DButton.setTitle(questionData1.arrayOfQuestions[randomInt].D, for: .normal)
-         */
+         
         }
     }
 }

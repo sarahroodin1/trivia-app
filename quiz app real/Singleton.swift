@@ -16,16 +16,21 @@ class Singleton{
     
     init() {
         print("hi")
-        AF.request("https://pastebin.com/raw/QRGzxxEy").responseDecodable(of: Question.self) {response in
+        AF.request("https://pastebin.com/raw/QRGzxxEy").responseData {response in
             switch response.result{
             case .success(let data):
-                print(data)
-            
+                do {
+                    let result = try JSONDecoder().decode([Question].self, from: data)
+                    for r in result {
+                        self.arrayOfQuestions.append(r)
+                    }
+                }
+                catch (let error){
+                    print("Decoding error: \(error)")
+                }
             case .failure(let error):
                 print(error)
-                
             }
-        
         }
     }
     

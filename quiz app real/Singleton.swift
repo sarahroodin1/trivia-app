@@ -24,6 +24,7 @@ class Singleton{
                     for r in result {
                         self.arrayOfQuestions.append(r)
                     }
+                    print(self.arrayOfQuestions)
                 }
                 catch (let error){
                     print("Decoding error: \(error)")

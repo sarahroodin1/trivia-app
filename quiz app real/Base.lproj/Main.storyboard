@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="-868" y="-240"/>
         </scene>
-        <!--generalKnowledge-->
+        <!--GeneralKnowledge-->
         <scene sceneID="zuk-Gz-dQI">
             <objects>
-                <viewController title="generalKnowledge" id="twq-R0-9Gz" customClass="generalKnowledgeViewController" customModule="quiz_app_real" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="generalKnowledge" id="twq-R0-9Gz" userLabel="GeneralKnowledge" customClass="GeneralKnowledgeViewController" customModule="quiz_app_real" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qog-Sb-YRv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,33 +98,34 @@
                                 <rect key="frame" x="113" y="278" width="190" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Answer 1">
+                                <buttonConfiguration key="configuration" style="tinted" title="A">
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="twq-R0-9Gz" eventType="touchUpInside" id="9cq-Ry-3ql"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7Q-vu-ywL">
                                 <rect key="frame" x="113" y="380" width="190" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Answer 2">
+                                <buttonConfiguration key="configuration" style="tinted" title="B">
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="twq-R0-9Gz" eventType="touchUpInside" id="MVY-s3-9BT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuS-hO-HMi">
                                 <rect key="frame" x="113" y="482" width="190" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Answer 3">
+                                <buttonConfiguration key="configuration" style="tinted" title="C">
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                 </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep1-eC-nue">
-                                <rect key="frame" x="113" y="584" width="190" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Answer 4">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="twq-R0-9Gz" eventType="touchUpInside" id="CJ0-71-eGe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yf-Za-zQr">
                                 <rect key="frame" x="62" y="59" width="291" height="105"/>
@@ -136,14 +137,6 @@
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="42"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" r9824n75892u45o2u85mmu2384u2398mx423m84u23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-h2-lKy">
-                                <rect key="frame" x="10" y="181" width="397" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cv8-wD-44Y">
                                 <rect key="frame" x="150" y="728" width="92" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -160,18 +153,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep1-eC-nue">
+                                <rect key="frame" x="113" y="584" width="190" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="D">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="twq-R0-9Gz" eventType="touchUpInside" id="Y0K-fX-19B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" r9824n75892u45o2u85mmu2384u23tcmwtu3m09tum09weutcm09]98mx423m84u23" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-h2-lKy">
+                                <rect key="frame" x="25" y="181" width="328" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kuj-qI-vUH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="oQJ-db-gPS"/>
                     <connections>
-                        <outlet property="AButton" destination="0Ht-J1-oD3" id="Som-Ag-efI"/>
-                        <outlet property="BButton" destination="C7Q-vu-ywL" id="HwF-l4-1Kt"/>
-                        <outlet property="CButton" destination="SuS-hO-HMi" id="1Yo-pl-9Hh"/>
-                        <outlet property="DButton" destination="Ep1-eC-nue" id="9PW-3p-C9c"/>
-                        <outlet property="QuestionButton" destination="WaU-h2-lKy" id="96b-uP-Osn"/>
-                        <outlet property="scoreLabel" destination="ZRv-69-Bho" id="hCY-3b-eoy"/>
+                        <outlet property="AButton" destination="0Ht-J1-oD3" id="YFu-WL-Yi4"/>
+                        <outlet property="BButton" destination="C7Q-vu-ywL" id="1bj-FJ-5Rg"/>
+                        <outlet property="CButton" destination="SuS-hO-HMi" id="jzt-9K-kH0"/>
+                        <outlet property="DButton" destination="Ep1-eC-nue" id="Yq7-fd-IRj"/>
+                        <outlet property="QuestionButton" destination="WaU-h2-lKy" id="9se-Td-CMc"/>
+                        <outlet property="scoreLabel" destination="ZRv-69-Bho" id="7Qi-Le-6sR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwt-BT-JRj" sceneMemberID="firstResponder"/>
@@ -336,7 +348,7 @@
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="twq-R0-9Gz" kind="show" id="vrX-Fs-gMp"/>
+                                    <segue destination="twq-R0-9Gz" kind="show" id="B6u-b7-UBC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trivia Blast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paE-7B-Cfa">

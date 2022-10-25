@@ -15,7 +15,6 @@ class Singleton{
     
     
     init() {
-        print("hi")
         AF.request("https://pastebin.com/raw/QRGzxxEy").responseData {response in
             switch response.result{
             case .success(let data):
@@ -34,24 +33,4 @@ class Singleton{
             }
         }
     }
-    
-   /* func fetchAPIData(completion:@escaping([Question]) -> Void){
-        let url = URL(string: "https://pastebin.com/raw/QRGzxxEy")!
-        
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data else {
-                return
-            }
-            do{
-                let APIData = try JSONDecoder().decode([Question].self, from: data)
-                
-                completion(APIData)
-            }
-            catch{
-                let error = error
-                print(String(describing: error))
-            }
-        }
-            task.resume()
-    }*/
 }

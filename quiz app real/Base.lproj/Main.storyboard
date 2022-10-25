@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,392 +8,180 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--homePage-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="ahb-KF-LQu">
             <objects>
-                <viewController title="homePage" id="BYZ-38-t0r" customClass="ViewController" customModule="quiz_app_real" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Yon-MT-fia" customClass="ViewController" customModule="Trivia_App__new_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="njg-l6-a7a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trivia Blast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biG-Ye-Vkf">
-                                <rect key="frame" x="52" y="95" width="311" height="199"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-10-24 at 7.49.06 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="cDO-bA-YEf">
+                                <rect key="frame" x="-82" y="-377" width="572" height="1643"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.752696959" green="0.94380521110000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="64"/>
-                                <nil key="textColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43x-dN-KQP">
+                                <rect key="frame" x="13" y="88" width="381" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.85376381769999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.85376381769999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY9-ls-JCe">
-                                <rect key="frame" x="113" y="337" width="189" height="93"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zne-Tc-gBA">
+                                <rect key="frame" x="90" y="237" width="228" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.36382490680000001" green="1" blue="0.34018936750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.90494512009999994" green="0.9379272461" blue="0.19642255850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Topics">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
-                                    <color key="baseBackgroundColor" red="0.36382490680000001" green="1" blue="0.34018936750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXb-L8-buS">
-                                <rect key="frame" x="79" y="677" width="256" height="107"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyO-BN-zDr">
+                                <rect key="frame" x="89" y="350" width="228" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="48"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf7-M0-o2E">
-                                <rect key="frame" x="113" y="456" width="189" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <color key="backgroundColor" red="0.90494512009999994" green="0.9379272461" blue="0.19642255850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Store">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <buttonConfiguration key="configuration" style="plain" title="B">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ass-7O-qPH">
-                                <rect key="frame" x="113" y="576" width="189" height="93"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfa-O5-RZR">
+                                <rect key="frame" x="90" y="463" width="228" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" red="0.90494512009999994" green="0.9379272461" blue="0.19642255850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="FAQ">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="Pyl-vR-CKT" kind="show" id="a6G-eD-fl5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77g-Tl-weQ">
-                                <rect key="frame" x="113" y="337" width="189" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.36382490680000001" green="1" blue="0.34018936750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Topics">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
-                                    <color key="baseBackgroundColor" red="0.36382490680000001" green="1" blue="0.34018936750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="Nct-eF-9aV" kind="show" id="nAG-uZ-917"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zxg-CM-E0C"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-868" y="-240"/>
-        </scene>
-        <!--GeneralKnowledge-->
-        <scene sceneID="zuk-Gz-dQI">
-            <objects>
-                <viewController title="generalKnowledge" id="twq-R0-9Gz" userLabel="GeneralKnowledge" customClass="GeneralKnowledgeViewController" customModule="quiz_app_real" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qog-Sb-YRv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ht-J1-oD3">
-                                <rect key="frame" x="113" y="278" width="190" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="A">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="ButtonPressed:" destination="twq-R0-9Gz" eventType="touchUpInside" id="9cq-Ry-3ql"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7Q-vu-ywL">
-                                <rect key="frame" x="113" y="380" width="190" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="B">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="ButtonPressed:" destination="twq-R0-9Gz" eventType="touchUpInside" id="MVY-s3-9BT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuS-hO-HMi">
-                                <rect key="frame" x="113" y="482" width="190" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="C">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="ButtonPressed:" destination="twq-R0-9Gz" eventType="touchUpInside" id="CJ0-71-eGe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yf-Za-zQr">
-                                <rect key="frame" x="62" y="59" width="291" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.96061837949999995" blue="0.64986900719999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.96848052740000001" green="0.76799129769999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="General knowledge">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="42"/>
+                                <buttonConfiguration key="configuration" style="plain" title="C">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cv8-wD-44Y">
-                                <rect key="frame" x="150" y="728" width="92" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ne-eF-hvq">
+                                <rect key="frame" x="89" y="576" width="228" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.70401452399999997" green="0.63157914029999995" blue="0.86087566609999999" alpha="0.60166879250000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.90494512009999994" green="0.9379272461" blue="0.19642255850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="D">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="007-JK-iaj">
+                                <rect key="frame" x="141" y="710" width="101" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.095028736929999996" green="0.51531074190000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.99111006509999999" blue="0.91909961780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRv-69-Bho">
-                                <rect key="frame" x="242" y="728" width="24" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2N-ck-jZm">
+                                <rect key="frame" x="241" y="710" width="32" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.70401452399999997" green="0.63157914029999995" blue="0.86087566609999999" alpha="0.60166879250000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.095028736929999996" green="0.51531074190000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep1-eC-nue">
-                                <rect key="frame" x="113" y="584" width="190" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="D">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="ButtonPressed:" destination="twq-R0-9Gz" eventType="touchUpInside" id="Y0K-fX-19B"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" r9824n75892u45o2u85mmu2384u23tcmwtu3m09tum09weutcm09]98mx423m84u23" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-h2-lKy">
-                                <rect key="frame" x="25" y="181" width="328" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="9"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.99111006509999999" blue="0.91909961780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Kuj-qI-vUH"/>
+                        <viewLayoutGuide key="safeArea" id="NAn-ib-u8y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oQJ-db-gPS"/>
-                    <connections>
-                        <outlet property="AButton" destination="0Ht-J1-oD3" id="YFu-WL-Yi4"/>
-                        <outlet property="BButton" destination="C7Q-vu-ywL" id="1bj-FJ-5Rg"/>
-                        <outlet property="CButton" destination="SuS-hO-HMi" id="jzt-9K-kH0"/>
-                        <outlet property="DButton" destination="Ep1-eC-nue" id="Yq7-fd-IRj"/>
-                        <outlet property="QuestionButton" destination="WaU-h2-lKy" id="9se-Td-CMc"/>
-                        <outlet property="scoreLabel" destination="ZRv-69-Bho" id="7Qi-Le-6sR"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="bn7-dL-LZC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwt-BT-JRj" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zw3-r7-k1J" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340.5797101449277" y="-653.57142857142856"/>
+            <point key="canvasLocation" x="382.60869565217394" y="-167.41071428571428"/>
         </scene>
-        <!--ifFAQPressed-->
-        <scene sceneID="r1F-7H-5uf">
+        <!--View Controller-->
+        <scene sceneID="xIA-nc-O4J">
             <objects>
-                <viewController title="ifFAQPressed" id="Pyl-vR-CKT" customClass="ViewController" customModule="quiz_app_real" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MZn-UR-UnG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frequently Asked Questions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-em-6AL">
-                                <rect key="frame" x="20" y="156" width="374" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.69402357219999999" blue="0.9329083547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trivia Blast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53i-Ok-O5O">
-                                <rect key="frame" x="111" y="60" width="193" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.752696959" green="0.94380521110000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-K2-McL">
-                                <rect key="frame" x="123" y="735" width="168" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Return to home page">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="xt5-Gd-a1m"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="gsf-Ld-1DH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="49F-Mw-Tk1"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4ep-MP-XeU" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-868.11594202898561" y="766.74107142857144"/>
-        </scene>
-        <!--isWrongAnswerPressed-->
-        <scene sceneID="eN7-Za-HRW">
-            <objects>
-                <viewController title="isWrongAnswerPressed" id="cDH-Ks-blN" customClass="ViewController" customModule="quiz_app_real" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ral-dh-7or">
+                <viewController id="K1v-le-QTb" customClass="ViewController" customModule="Trivia_App__new_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8tr-3K-zIM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Lose!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQw-Jw-lyO">
-                                <rect key="frame" x="20" y="147" width="374" height="116"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-10-24 at 7.49.06 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="eeG-Tg-nMK">
+                                <rect key="frame" x="-93" y="-375" width="572" height="1643"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92133218050003052" green="0.43500729439580393" blue="0.46706499933900819" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="48"/>
-                                <nil key="textColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trivia Blast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1al-8G-TmN">
+                                <rect key="frame" x="29" y="80" width="328" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.51846167700000001" blue="0.053466875230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="52"/>
+                                <color key="textColor" red="1" green="0.99111006509999999" blue="0.91909961780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trivia Blast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RN-e0-icd">
-                                <rect key="frame" x="111" y="58" width="193" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04c-iq-RYS">
+                                <rect key="frame" x="80" y="496" width="254" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.752696959" green="0.94380521110000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZQ-vw-xIz">
-                                <rect key="frame" x="88" y="319" width="239" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <color key="backgroundColor" red="0.90494512009999994" green="0.9379272461" blue="0.19642255850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Play again">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="FAQ">
+                                            <attributes>
+                                                <font key="NSFont" size="45" name="MarkerFelt-Thin"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.90494512009999994" green="0.9379272461" blue="0.19642255850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kd-it-Soj">
-                                <rect key="frame" x="88" y="486" width="239" height="116"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1P-zk-bbv">
+                                <rect key="frame" x="80" y="271" width="254" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.85376381769999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="0.038033865809999998" blue="0.88296994220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Return to home page">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Play">
+                                            <attributes>
+                                                <font key="NSFont" size="45" name="MarkerFelt-Thin"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="qb8-OU-YKr"/>
+                                    <segue destination="Yon-MT-fia" kind="show" id="CjI-v2-mLt"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ZcH-fV-Lvv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mdi-qX-Md9" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="171" y="767"/>
-        </scene>
-        <!--ifTopicPressed-->
-        <scene sceneID="Gg9-x0-4IN">
-            <objects>
-                <viewController title="ifTopicPressed" id="Nct-eF-9aV" customClass="ViewController" customModule="quiz_app_real" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1lj-Iv-PhC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYU-Z8-r4K">
-                                <rect key="frame" x="204" y="401" width="190" height="94"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZM-aW-wfa">
+                                <rect key="frame" x="106" y="724" width="174" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.74023630250000005" blue="0.55714657990000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.83132651417525771" green="0.423398619433699" blue="0.34744006888697182" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Sports">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnb-Zg-3Wg">
-                                <rect key="frame" x="15" y="523" width="190" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.50528765688269872" green="1" blue="0.51533363832287171" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.084927267607303583" green="0.51187983247422686" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="History">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erq-Gk-Zb5">
-                                <rect key="frame" x="132" y="152" width="175" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.095028736927236457" green="0.51531074193553028" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.99111006509999999" blue="0.91909961780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R63-19-svf">
-                                <rect key="frame" x="204" y="638" width="190" height="94"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOW-YD-3rj">
+                                <rect key="frame" x="277" y="724" width="32" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.0" blue="0.85376381769999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Pop culture">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRG-1E-HlM">
-                                <rect key="frame" x="15" y="278" width="200" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.96061837953426776" blue="0.64986900716435003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.96848052740097046" green="0.76799129773938413" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="General knowledge">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="twq-R0-9Gz" kind="show" id="B6u-b7-UBC"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trivia Blast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paE-7B-Cfa">
-                                <rect key="frame" x="57" y="42" width="300" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.752696959" green="0.94380521110000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="56"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.095028736929999996" green="0.51531074190000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.99111006509999999" blue="0.91909961780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="8Wa-a6-3mx"/>
+                        <viewLayoutGuide key="safeArea" id="RCi-WV-AkI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pri-vK-ygz"/>
+                    <navigationItem key="navigationItem" id="gGp-Bc-8Db"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HmI-0y-QGg" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8a-jd-8NH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="-240"/>
+            <point key="canvasLocation" x="-546.37681159420299" y="-167.41071428571428"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="qb8-OU-YKr"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Screen Shot 2022-10-24 at 7.49.06 PM.png" width="242" height="384"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
